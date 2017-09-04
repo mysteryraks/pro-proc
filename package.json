@@ -1,0 +1,19 @@
+{
+  "name": "e2etests",
+  "version": "1.0.0",
+  "description": "Contains automated test cases that will be run as a grunt task triggered through Jenkins",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rakesh",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-protractor-webdriver": "^0.2.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-jasmine": "^1.1.0",
+    "grunt-protractor-runner": "^5.0.0"
+  }
+}
