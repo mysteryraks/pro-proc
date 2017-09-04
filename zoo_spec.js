@@ -23,5 +23,13 @@ describe("test the zoo website", ()=> {
         });
         element(by.buttonText('CONTINUE'));
     });
+
+	 it("verify text agaub",()=>{
+        element(by.model('person.name')).sendKeys("subscribe");
+        element(by.binding('person.name')).getText().then((text)=>{
+            expect(text).toMatch('subscribe');
+        });
+        element(by.buttonText('CONTINUE'));
+    }); 	
     
     });
